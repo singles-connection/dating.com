@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Dating Connection International</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dating Connection International</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-hero">
+    <h1>Our Services</h1>
+    <p>Simple, structured, and designed to help you find a genuine connection.</p>
+  </section>
+
+  <section class="services-container">
+    <div class="service-box">
+      <h2>1. Profile Review & Verification</h2>
+      <p>We manually assess every submitted profile to ensure authenticity, clarity, and readiness. This helps maintain a safe and genuine matchmaking environment.</p>
+    </div>
+
+    <div class="service-box">
+      <h2>2. Personalized Matchmaking</h2>
+      <p>Based on your questionnaire responses, we analyze compatibility factors such as interests, personality traits, and relationship goals to connect you with the most suitable match.</p>
+    </div>
+
+    <div class="service-box">
+      <h2>3. Access to Verified Profiles</h2>
+      <p>Browse approved profiles from around the world. Each profile is carefully reviewed and updated regularly to ensure accuracy.</p>
+    </div>
+
+    <div class="service-box">
+      <h2>4. Questionnaire-Based Matching</h2>
+      <p>Your answers help us understand who you are and what you are looking for. The system guides you through a structured, step-by-step questionnaire.</p>
+    </div>
+
+    <div class="service-box">
+      <h2>5. Final Connection via WhatsApp</h2>
+      <p>After reviewing your details, we contact you directly via WhatsApp for final communication, clarification, and personalized recommendations.</p>
+    </div>
+
+    <div class="service-box">
+      <h2>6. Ongoing Support & Guidance</h2>
+      <p>We remain available for questions, updates, and additional assistance as needed. Your experience matters to us.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dating Connection International. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
