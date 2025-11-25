@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dating Questionnaire - Dating Connection International</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/progress.js"></script>
+  <style>
+    .questionnaire-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .question-step {
+      display: none;
+    }
+    .question-step.active {
+      display: block;
+    }
+    .progress-bar-container {
+      background: #e0e0e0;
+      border-radius: 20px;
+      height: 20px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background-color: #ff4d4d;
+      transition: width 0.3s ease;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .btn {
+      background-color: #ff4d4d;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #e60000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Dating Connection International</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="profiles.html">Profiles</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section class="questionnaire-container">
+    <h1>Find Your Match</h1>
+
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="question-step active">
+      <h2>Step 1: Basic Info</h2>
+      <label>Full Name:</label>
+      <input type="text" id="fullname" required />
+      <label>Age:</label>
+      <input type="number" id="age" required min="18" />
+      <label>Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="question-step">
+      <h2>Step 2: Preferences</h2>
+      <label>Looking for:</label>
+      <select id="lookingFor" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <label>Preferred Age Range:</label>
+      <input type="text" id="ageRange" placeholder="e.g., 25-35" required />
+    </div>
+
+    <!-- Step 3 -->
+    <div class="question-step">
+      <h2>Step 3: Interests</h2>
+      <label>Hobbies/Interests:</label>
+      <textarea id="interests" rows="4" required></textarea>
+      <label>Describe Yourself in a Few Words:</label>
+      <textarea id="description" rows="4" required></textarea>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="question-step">
+      <h2>Step 4: Contact Info</h2>
+      <label>Email:</label>
+      <input type="email" id="email" required />
+      <label>Phone/WhatsApp:</label>
+      <input type="tel" id="phone" required />
+    </div>
+
+    <div class="btn-container">
+      <button class="btn" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button class="btn" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dating Connection International. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
