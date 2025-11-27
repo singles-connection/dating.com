@@ -52,15 +52,20 @@
       animation: spin 1s linear infinite;
     }
 
-    a {
-      color: #fff;
+    .whatsapp-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #25D366;
+      color: white;
       font-weight: bold;
-      text-decoration: underline;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background 0.3s ease;
     }
 
-    p.manual-link {
-      margin-top: 1.5rem;
-      font-style: italic;
+    .whatsapp-button:hover {
+      background: #128C7E;
     }
 
     @keyframes spin {
@@ -84,25 +89,22 @@
   <div class="container">
     <h1>Thank You!</h1>
     <p>Your submission has been received successfully.</p>
-    <p>You will now be redirected to WhatsApp to finalize your matchmaking.</p>
+    <p>Click the button below to connect with us on WhatsApp and finalize your matchmaking.</p>
 
     <div class="spinner"></div>
 
-    <!-- Manual link in case auto-redirect fails -->
-    <p class="manual-link">
-      If you are not redirected automatically, click here to send a message on WhatsApp:<br>
-      <a href="https://wa.me/254707775336?text=Hello!%20I%20have%20submitted%20my%20application%20and%20I%20would%20like%20to%20get%20connected.%20Thank%20you!" target="_blank" rel="noopener noreferrer">
-        Send Message on WhatsApp
-      </a>
+    <!-- WhatsApp Button -->
+    <a class="whatsapp-button" 
+       href="https://wa.me/254707775336?text=Hello!%20I%20have%20submitted%20my%20application%20and%20I%20would%20like%20to%20get%20connected.%20Thank%20you!" 
+       target="_blank" rel="noopener noreferrer">
+       Open WhatsApp
+    </a>
+
+    <!-- Optional note for users -->
+    <p class="manual-link" style="margin-top:1rem; font-style:italic;">
+      If WhatsApp does not open automatically, click the button above.
     </p>
   </div>
-
-  <!-- Auto redirect to WhatsApp with pre-filled message -->
-  <script>
-    setTimeout(function() {
-      window.top.location.href = "https://wa.me/254707775336?text=Hello!%20I%20have%20submitted%20my%20application%20and%20I%20would%20like%20to%20get%20connected.%20Thank%20you!";
-    }, 2000); // 2 seconds delay
-  </script>
 
 </body>
 </html>
